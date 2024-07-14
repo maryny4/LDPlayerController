@@ -1,3 +1,5 @@
+[Contact me on Telegram if u have any problem](https://t.me/maryny4)
+
 # LDPlayer Controller
 
 LDPlayer Controller is a graphical user interface (GUI) built with Python and the Tkinter library to manage the LDPlayer Android emulator. This script supports launching, closing, and automating LDPlayer instances, as well as interacting with on-screen templates.
