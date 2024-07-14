@@ -1,0 +1,9 @@
+subprocess
+logging
+asyncio
+tk
+opencv-python-headless
+pillow
+numpy
+pyautogui
+configparser
