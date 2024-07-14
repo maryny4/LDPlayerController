@@ -7,7 +7,7 @@ LDPlayer Controller is a graphical user interface (GUI) built with Python and th
 - **Start LDPlayer**: Input indices of the emulators and launch the corresponding LDPlayer instances.
 - **Close LDPlayer**: Terminate LDPlayer instances by their indices.
 - **Sort Windows Command**: Execute the `sortWnd` command to organize LDPlayer windows.
-- **Click on Templates**: Search for and click on specified templates within the first LDPlayer window.
+- **Click on Synchronize**: Search for and click on synchronize templates within the first LDPlayer window.
 - **Automate Bot**: Automate the bot's launch on devices connected via ADB.
 
 ## Libraries and Dependencies
