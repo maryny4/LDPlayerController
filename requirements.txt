@@ -2,7 +2,7 @@ subprocess
 logging
 asyncio
 tk
-opencv-python-headless
+opencv-python
 pillow
 numpy
 pyautogui
