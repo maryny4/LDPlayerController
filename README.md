@@ -1,41 +1,41 @@
 # LDPlayer Controller
 
-LDPlayer Controller - это графический интерфейс пользователя (GUI), созданный с использованием Python и библиотеки Tkinter для управления эмулятором Android LDPlayer. Скрипт поддерживает запуск, остановку и автоматизацию LDPlayer, а также взаимодействие с шаблонами на экране эмулятора.
+LDPlayer Controller is a graphical user interface (GUI) built with Python and the Tkinter library to manage the LDPlayer Android emulator. This script supports launching, closing, and automating LDPlayer instances, as well as interacting with on-screen templates.
 
-## Функции
+## Features
 
-- **Запуск LDPlayer**: Ввод индексов эмуляторов и запуск соответствующих экземпляров LDPlayer.
-- **Закрытие LDPlayer**: Завершение работы экземпляров LDPlayer по индексам.
-- **Команда сортировки окон**: Выполнение команды `sortWnd` для упорядочивания окон LDPlayer.
-- **Клик по шаблонам**: Поиск и клик по заданным шаблонам на первом окне LDPlayer.
-- **Автоматизация бота**: Автоматизация запуска бота на устройствах, подключенных через ADB.
+- **Start LDPlayer**: Input indices of the emulators and launch the corresponding LDPlayer instances.
+- **Close LDPlayer**: Terminate LDPlayer instances by their indices.
+- **Sort Windows Command**: Execute the `sortWnd` command to organize LDPlayer windows.
+- **Click on Templates**: Search for and click on specified templates within the first LDPlayer window.
+- **Automate Bot**: Automate the bot's launch on devices connected via ADB.
 
-## Используемые библиотеки и зависимости
+## Libraries and Dependencies
 
-- `asyncio`: Для асинхронного выполнения задач.
-- `tkinter`: Для создания графического интерфейса.
-- `subprocess`: Для выполнения системных команд.
-- `cv2` (OpenCV): Для обработки изображений и поиска шаблонов.
-- `numpy`: Для работы с массивами изображений.
-- `PIL` (Pillow): Для захвата скриншотов.
-- `pyautogui`: Для выполнения кликов мыши.
-- `concurrent.futures`: Для многопоточного выполнения задач.
-- `configparser`: Для чтения конфигурационных файлов.
+- `asyncio`: For asynchronous task execution.
+- `tkinter`: For creating the graphical user interface.
+- `subprocess`: For executing system commands.
+- `cv2` (OpenCV): For image processing and template matching.
+- `numpy`: For handling image arrays.
+- `PIL` (Pillow): For capturing screenshots.
+- `pyautogui`: For performing mouse clicks.
+- `concurrent.futures`: For multithreaded task execution.
+- `configparser`: For reading configuration files.
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/ldplayer-controller.git
     cd ldplayer-controller
     ```
 
-2. Установите необходимые зависимости:
+2. Install the required dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-3. Настройте конфигурационный файл `urls_config.ini`:
+3. Configure the `urls_config.ini` file:
     ```ini
     [PATHS]
     adb_path = path/to/adb
@@ -46,20 +46,20 @@ LDPlayer Controller - это графический интерфейс поль�
     bot2 = http://example.com/bot2
     ```
 
-## Использование
+## Usage
 
-1. Запустите скрипт:
+1. Run the script:
     ```sh
     python ldplayer_controller.py
     ```
 
-2. Введите индексы LDPlayer, которые вы хотите запустить, в поле "LDPlayer Indices (space-separated)" и нажмите "Start LDPlayer".
+2. Enter the indices of the LDPlayer instances you want to start in the "LDPlayer Indices (space-separated)" field and click "Start LDPlayer".
 
-3. Используйте кнопки "Sort Windows", "Click Syn", и "Quit LDPlayer" для выполнения соответствующих действий.
+3. Use the "Sort Windows", "Click Syn", and "Quit LDPlayer" buttons to perform the corresponding actions.
 
-4. Выберите URL бота из выпадающего списка и нажмите "Automate Bot" для автоматического запуска бота на подключенных устройствах.
+4. Select a bot URL from the dropdown menu and click "Automate Bot" to automatically launch the bot on connected devices.
 
-## Пример конфигурационного файла `urls_config.ini`
+## Example Configuration File `urls_config.ini`
 
 ```ini
 [PATHS]
